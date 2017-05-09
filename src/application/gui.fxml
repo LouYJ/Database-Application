@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="407.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.guiController">
+   <children>
+      <CheckBox fx:id="checkID" layoutX="25.0" layoutY="35.0" mnemonicParsing="false" text="Student Number" />
+      <CheckBox fx:id="checkName" layoutX="25.0" layoutY="70.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="60.0" text="Name" />
+      <CheckBox fx:id="checkAge" layoutX="25.0" layoutY="105.0" mnemonicParsing="false" text="Age" />
+      <CheckBox fx:id="checkGender" layoutX="25.0" layoutY="143.0" mnemonicParsing="false" text="Gender" />
+      <CheckBox fx:id="checkClass" layoutX="309.0" layoutY="35.0" mnemonicParsing="false" text="Class" />
+      <CheckBox fx:id="checkDepartment" layoutX="309.0" layoutY="70.0" mnemonicParsing="false" text="Department" />
+      <CheckBox fx:id="checkAdress" layoutX="309.0" layoutY="106.0" mnemonicParsing="false" text="Adress" />
+      <TextField fx:id="ID" layoutX="161.0" layoutY="31.0" prefHeight="10.0" prefWidth="140.0" />
+      <TextField fx:id="Name" layoutX="161.0" layoutY="66.0" prefHeight="10.0" prefWidth="140.0" />
+      <TextField fx:id="infAge" layoutX="161.0" layoutY="102.0" prefHeight="18.0" prefWidth="60.0" />
+      <TextField fx:id="Gender" layoutX="161.0" layoutY="139.0" prefHeight="10.0" prefWidth="140.0" />
+      <TextField fx:id="Class" layoutX="417.0" layoutY="31.0" prefHeight="10.0" prefWidth="140.0" />
+      <TextField fx:id="Department" layoutX="417.0" layoutY="66.0" prefHeight="10.0" prefWidth="140.0" />
+      <TextField fx:id="Address" layoutX="417.0" layoutY="101.0" prefHeight="10.0" prefWidth="140.0" />
+      <TextField fx:id="supAge" layoutX="241.0" layoutY="102.0" prefHeight="18.0" prefWidth="60.0" />
+      
+      <Text layoutX="227.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to" wrappingWidth="27.21875" />
+      <Button fx:id="inqButton" layoutX="417.0" layoutY="139.0" mnemonicParsing="false" onAction="#inquireAction" onMouseClicked="#clickInquire" text="Inquire" />
+      <TextField fx:id="statement" layoutX="25.0" layoutY="177.0" prefHeight="56.0" prefWidth="534.0" />
+      <Accordion layoutX="107.0" layoutY="253.0" />
+      <TableView fx:id="allResult" layoutX="25.0" layoutY="233.0" prefHeight="155.0" prefWidth="534.0">
+        <columns>
+          <TableColumn fx:id="csid" prefWidth="75.0" text="sid" />
+          <TableColumn fx:id="csname" prefWidth="75.0" text="sname" />
+            <TableColumn fx:id="csage" prefWidth="45.0" text="sage" />
+            <TableColumn fx:id="cssex" prefWidth="38.0" text="ssex" />
+            <TableColumn fx:id="cclass" prefWidth="63.0" text="class" />
+            <TableColumn fx:id="cdepartment" prefWidth="78.0" text="department" />
+            <TableColumn fx:id="caddress" prefWidth="159.0" text="address" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
